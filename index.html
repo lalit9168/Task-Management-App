@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager Application</h1>
+    <div class="task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required>
+      <textarea id="task-description" placeholder="Task Description"></textarea>
+      <input type="date" id="task-date">
+      <div class="status-options">
+        <label>
+          <input type="radio" name="status" value="pending" checked> Pending
+        </label>
+        <label>
+          <input type="radio" name="status" value="completed"> Completed
+        </label>
+      </div>
+      <button id="add-task-btn">Add Task</button>
+    </div>
+    <button id="view-tasks-btn">View Tasks</button>
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>
